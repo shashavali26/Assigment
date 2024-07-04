@@ -1,0 +1,291 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.entire{
+  display: flex;
+}
+
+.main1{
+  width: 300px;
+  margin:125px;
+  /* text-align: center; */
+}
+
+.main-image img {
+  width: 130%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.thumbnails {
+  margin-top: 10px;
+  position: relative;
+  left: 20px;
+  
+}
+
+.thumbnails img {
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 3px;
+  /* margin-left: 5px; */
+  transition: transform 0.2s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+#color{
+  display: flex;
+}
+#color .box{
+  height: 10vh;
+  width: 4vw;
+  margin: 15px;
+}
+.buttons .p1{
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 2vh;
+  width: 1vw;
+}
+.btn{
+  height: 6vh;
+  width: 7vw;
+  border-radius:20px;
+}
+#bt1,#bt2,#bt3,#bt4,#bt5{
+  display: flex;
+  margin: 5px;
+
+}
+.buttons{
+  display: flex;
+}
+.btn .p2{
+  margin-left: 3px;
+}
+.add-to-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2850a7;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 12vw;
+  height: 7vh;
+}
+
+
+.add-to-cart-btn .cart-icon {
+  margin-right: 10px;
+}
+.quantity-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.quantity-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.cartsec{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.main2{
+  height: 20%;
+  width: 40%;
+  margin-left: 20px;
+}
+#disc{
+  display: flex;
+  align-items: center;
+}
+#disc p{
+  margin-left: 20px;
+}
+#disc h1{
+  color: rgb(0, 119, 255);
+}
+.amount .und{
+  position: relative;
+  bottom: 35px;
+  text-decoration: line-through;
+  color: #3b3838;
+  font-size:larger;
+}
+.amount{
+  height:10vh;
+}
+#id1{
+  height: 15vh;
+}
+.cartsec{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.buttons{
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+#box1::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 15px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(-55deg);
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#box1{
+  background-color: #ECDECC ;
+  padding: 1px;
+  
+}
+#box2{
+  background-color: #BBD278;
+  padding: 1px;
+}
+#box3{
+  background-color: #BBC1F8;
+  padding: 1px;
+}
+#box4{
+  background-color: #FFD3F8;
+  padding: 1px;
+}
+#mbox{
+  border: 3px solid #ECDECC;
+}
+#output{
+  border-radius: 10px;
+  height: 4vh;
+  text-align: center;
+}
+.btn.selected{
+  background-color: #2f6bc4;
+  color: #fff;
+  
+}
+.p1.selected{
+  background-color: #010307;
+}
+.b1.selected{
+  border: 3px solid #ECDECC;
+  
+
+}
+@media (max-width: 1300px) {
+  .btn{
+      height: 8vh;
+      width: 10vw;
+      border-radius:20px;
+      text-wrap: wrap;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+      font-size: 14px;
+  }
+  /* .entire{
+      display: flex;
+      flex-wrap: wrap;
+      
+  } */
+  .main1{
+      margin: 60px;
+      
+  }
+  .main2{
+      margin: 60px;
+
+  }
+  .btn{
+      height: 8vh;
+      width: 10vw;
+      border-radius:20px;
+      text-wrap: wrap;
+  }
+
+}
+@media (max-width: 745px) {
+  body {
+      font-size: 12px;
+  }
+  /* .btn{
+      height: 8vh;
+      width: 10vw;
+      border-radius:20px;
+  } */
+  .entire{
+     display: flex;
+     flex-wrap: wrap;
+  }
+  /* .main1{
+      margin:40px;
+  } */
+  .main2{
+      margin-top:0px;
+  }
+  .btn{
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+@media (max-width: 745px){
+  .btn{
+      font-size: 12px;
+      padding: 4px 8px;
+  }
+  .p1{
+      border-radius: 1000%;
+  height: 1vh;
+  width: 1vw;
+}
+.box{
+
+  height: 20vh;
+  width: 200vw;
+}
+
+  }
+
+
+

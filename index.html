@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <title>Add to Cart</title>
+
+</head>
+
+<body>
+    <div class="entire">
+        <div class="main1">
+            <div class="main-image">
+                <img id="mainImage" src="img1.png" alt="Main Product Image">
+            </div>
+            <div class="thumbnails">
+                <img class="thumb" src="img2.png" alt="Product Thumbnail 1" onclick="changeImage('img2.png')">
+                <img class="thumb" src="img3.png" alt="Product Thumbnail 2" onclick="changeImage('img3.png')">
+                <img class="thumb" src="img4.png" alt="Product Thumbnail 3" onclick="changeImage('img4.png')">
+                <img class="thumb" src="img5.png" alt="Product Thumbnail 4" onclick="changeImage('img5.png')">
+            </div>
+        </div>
+        <div class="main2">
+            <div id="top1"> 
+                <p id="m1"> mar</p>
+               <h1 id="m2">Embed</h1>
+            </div>
+            <hr>
+            <div class="amount">
+                <div id="disc"><h1 id="m3">score</h1> 
+                     <h3 id="m4">35% off</h3>
+                    </div>
+                <h1 class="und" id="m5">scoreless</h1>
+            </div>
+            <hr>
+            <p>Choose Color</p>
+            <div id="color">
+                <div class="b1" onclick="selectSi(this)" name="yellow"><div class="box" id="box1"></div></div>
+                <div class ="b1" onclick="selectSi(this)" name="Green"> <div class="box" id="box2"></div></div>
+                <div class="b1" onclick="selectSi(this)" name="Blue"><div class="box" id="box3"> </div></div>
+                <div class="b1" onclick="selectSi(this)" name="Pink"><div class="box" id="box4"></div></div>
+            </div>
+            <hr>
+            <p>Choose Size<p>
+            <div class="buttons">
+                <button class="btn" id="bt1" onclick="selectSize(this)"><p class="p1"></p><p class="p2">Small</p></button>
+                <button class="btn" id="bt2" onclick="selectSize(this)"><p class="p1" ></p ><p class="p2">Medium</p></button>
+                <button class="btn" id="bt3" onclick="selectSize(this)"><p class="p1"></p ><p class="p2">Large</p></button>
+                <button class="btn" id="bt4" onclick="selectSize(this)"><p class="p1"></p><p  class="p2">Extra Large</p></button>
+                <button class="btn" id="bt5" onclick="selectSize(this)"><p class="p1"></p ><p class="p2">XXL</p></button>
+            </div>
+            <hr>
+            <div class="cartsec">
+                <div>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" id="decrease-btn">-</button>
+                        <input type="text" class="quantity-input" id="quantity-input" value="1" readonly>
+                        <button class="quantity-btn" id="increase-btn">+</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-to-cart-btn" id="acart" onclick="addtoCart()">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div id="output"></div>
+            <hr>
+            <div id="m7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima culpa quod maxime error officiis excepturi. Voluptatibus, voluptas! Ipsa nostrum in, laborum numquam veritatis voluptatibus, harum error perspiciatis optio ad aspernatur!</div>
+        </div>
+    </div>
+    
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
